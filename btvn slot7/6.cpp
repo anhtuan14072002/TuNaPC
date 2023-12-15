@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-//Nh?p n sau dó tính S = 1 + 1/2 + 1/3 + … + 1/n
+//Nh?p n sau dÃ³ tÃ­nh S = 1 + 1/2 + 1/3 + â€¦ + 1/n
 int main(){
 	
 	int n;
@@ -13,5 +13,5 @@ int main(){
 		s = s + 1.0 /i;
 		i++;
 	}	
-	printf(" %f ",s);
+	printf(" tong s= %f ",s);
 }
