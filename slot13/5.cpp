@@ -11,20 +11,27 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
-    int nguyento = -1;
+    int nguyento = 0;
+    int nguyentomax=0;
     for(int i=0; i < n; i++){
-    	for(int j=0;j<i;i++){
-    		if(arr[i] % j == 0){	
+    	if(arr[i]>=2){
+    		nguyento = 0;
+		}
+    	for(int j = 2; j<i; j++){
+    		if(arr[i] % j == 0){
+				nguyento = 1;
 			}else{
-				if(arr[i]> nguyento) {
-					nguyento = arr[i];
+				if(arr[i]> nguyentomax) {
+					nguyentomax = arr[i];
 				}
 			}
 		}
 	}
-		if(nguyento == -1){
-			 printf("Trong mang khong co so nguyen to.\n%d",nguyento);
-		}else {
-			printf("%d",nguyento);
+		if(nguyentomax == 0){
+			printf("Trong mang khong co so nguyen to.\n");
+		}else{
+			printf("%d",nguyentomax);
 		}
+		
+		
 }
