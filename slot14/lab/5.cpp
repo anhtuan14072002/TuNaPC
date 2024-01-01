@@ -1,27 +1,16 @@
 #include<stdio.h>
 #include<math.h>
 
-//int ucln(int a, int b){
-//
-//	for(int i =a;; i++){
-//		if(a % i==0 && b %i ==0){
-//			return i;
-//		}
-//	}
-//	return a*b
-//}
-// tim so lon nhat trong mang n so nguyen
-int max(int ar[],int n){ // tham so dang tham chieu
-	int h=arr[0];
-	for(int i=1;i<n;i++){
-		if(h<arr[i]){
-			h=arr[i];
-		}
+int bcnn(int a, int b){
+	int i;
+	if(a > 0 && b>0){
+		i = a * b;
 	}
-	return h;
+	return i;
 }
+
 int main(){
-	int ary[5]= {5,4,1,3,8};
-	int m=max(ary,5);
-	printf("max:%d",m);
+	int x=2, y=3;
+	int z=bcnn(x,y);
+	printf("boi chung nho nhat la:%d",z);
 }

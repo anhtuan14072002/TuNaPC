@@ -1,18 +1,18 @@
 #include<stdio.h>
 #include<math.h>
 
-int tongcacsonguyen(int n){
-	int s=0;
-	for(int i;n>0;i++){
+int tong(int n){
+	int s;
+	for(int i; n>0;){
 		i= n % 10;
 		n= n / 10;
-		s += i;
+		s += i ;
 	}
 	return s;
 }
 
 int main(){
-	int x= 1234;
-	int z = tongcacsonguyen(x);
-	printf("tong cac chu so cua so nguyen :%d",z);
+	int x=123;
+	int y = tong(x);
+	printf("tong cua cac chu so trong n la: %d",y);
 }
